@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CIATox Belém — Medicamentos</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+  <div class="brand"><span class="brand-mark">+</span><div><b>CIATox</b><span>Belém</span></div></div>
+  <nav>
+    <a>⌂　 Início</a><a>▤　 Orientações Gerais</a><a>✚　 Conduta</a>
+    <a class="active">💊　 Medicamentos</a><a>▦　 Conteúdos</a><a>▣　 Flashcards</a>
+    <a>☑　 Questionários</a><a>▥　 Meu Progresso</a>
+  </nav><div class="logout">⇥　 Sair</div><div class="city">BELÉM</div>
+</aside>
+<main>
+<header><div><b>Centro de Informação Toxicológica de Belém</b><small>Informação, orientação e cuidado em casos de intoxicação</small></div><div class="user">●　 Olá, Estagiário(a)!　⌄　 │　 ☾</div></header>
+<div class="crumb">⌂　/　Medicamentos</div>
+<section class="heading"><div class="heading-icon">💊</div><div><h1>Medicamentos</h1><p>Consulte informações gerais, orientações sobre medicamentos e cálculo de dose.</p></div></section>
+<div class="tabs" role="tablist">
+<button class="tab active" data-screen="general">01 · Pergunta geral</button>
+<button class="tab" data-screen="medicine">02 · Medicamento</button>
+<button class="tab" data-screen="search">03 · Pesquisar</button>
+</div>
+
+<section class="screen active" id="screen-general">
+  <h2>Pergunta geral</h2><p class="subtitle">Selecione uma das opções disponíveis.</p>
+  <div class="columns">
+    <article class="panel"><div class="panel-title">▤　 Pergunta geral</div><div class="options">
+      <button class="option" data-choice="Resumo geral"><span class="ico">▤</span>Resumo geral<span class="arrow">›</span></button>
+      <button class="option" data-choice="Receita"><span class="ico">▧</span>Receita<span class="arrow">›</span></button>
+    </div></article>
+    <aside class="tip"><b class="info">i</b><div><b>Seleção</b><p>Escolha “Resumo geral” ou “Receita” para indicar o assunto da consulta.</p></div></aside>
+  </div>
+</section>
+
+<section class="screen" id="screen-medicine">
+  <h2>Medicamento</h2><p class="subtitle">Opções disponíveis para consulta de medicamento.</p>
+  <div class="columns">
+    <article class="panel"><div class="panel-title">✚　 Medicamento</div><div class="options">
+      <button class="option" data-choice="Pergunta geral"><span class="ico">▤</span>Pergunta geral<span class="arrow">›</span></button>
+      <button class="option" data-choice="Resumo geral"><span class="ico">☷</span>Resumo geral<span class="arrow">›</span></button>
+      <button class="option accordion" aria-expanded="false" aria-controls="recipe"><span class="ico">⚗</span>Receita<span class="arrow">⌄</span></button>
+      <div class="suboptions" id="recipe" hidden>
+        <button data-choice="Como prescrever">•　Como prescrever</button>
+        <button data-choice="Doses">•　Doses</button>
+        <button data-choice="Dose máxima">•　Dose máxima</button>
+      </div>
+    </div></article>
+    <aside class="empty"><div class="empty-icon">▤</div><b>Selecione uma opção</b><p>As opções desta tela seguem o planejamento da seção Medicamento.</p></aside>
+  </div>
+</section>
+
+<section class="screen" id="screen-search">
+  <h2>Pesquisar</h2><p class="subtitle">Calcular a dose.</p>
+  <div class="columns">
+    <article class="panel"><div class="panel-title">⌕　 Pesquisar</div><div class="dose"><h3>Calcular a dose</h3><div class="options">
+      <button class="option" data-choice="Adulto"><span class="ico">♟</span>Adulto<span class="arrow">›</span></button>
+      <button class="option" data-choice="Criança"><span class="ico">♧</span>Criança<span class="arrow">›</span></button>
+    </div></div></article>
+    <aside class="tip"><b class="info">i</b><div><b>Calcular a dose</b><p>Escolha Adulto ou Criança. Os campos e critérios de cálculo não foram especificados no material disponível e, por isso, não foram criados neste protótipo.</p></div></aside>
+  </div>
+</section>
+<footer><b class="info">i</b><span><b>Dica</b><br>Em caso de dúvidas, entre em contato com o CIATox Belém: <strong>(91) 4009-6000 (24h).</strong></span></footer>
+</main></div><div class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body></html>
